@@ -1,0 +1,3 @@
+/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pioasm/CMakeFiles/rebuild_cache.dir
+/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pioasm/CMakeFiles/edit_cache.dir
+/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pioasm/CMakeFiles/pioasm.dir
