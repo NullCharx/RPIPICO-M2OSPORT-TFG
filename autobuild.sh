@@ -46,12 +46,13 @@ fi
 
 echo "---->Detecting mounted RPIPico"
 #Check if rpipico is mounted
+#TODO attempt to automatically mount the device
 if [ -d "/media/$(whoami)/RPI-RP2" ]; then
     echo "---->RPI-RP2 mounted. Attempting to copy file"
-    cd ..
-
+    cd "$filetoexecute"
+    pwd
     #Copy the file to the mounted drive
-    sudo cp "./build/${filetoexecute}.uf2" "/media/$(whoami)/RPI-RP2/${filetoexecute}.uf2"
+    sudo cp "${filetoexecute}.uf2" "/media/$(whoami)/RPI-RP2/${filetoexecute}.uf2"
     sudo sync
     sudo umount "/media/$(whoami)/RPI-RP2"
     echo "---->File: $filetoexecute copied to RPIPico. Build finished"
