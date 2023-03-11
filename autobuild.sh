@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 filetoexecute=$1
+export PICO_SDK_PATH=/home/prrtchr/pico/pico-sdk
+
 #Check if folder build exists in current directory
 if [ -d "build" ]; then
     echo "---->Build folder exists"
@@ -11,7 +13,6 @@ fi
 #Change to build directory
 cd build
 #Export path to pico-sdk (absolute path)
-export PICO_SDK_PATH=/home/prrtchr/pico/pico-sdk
 #Preconfigure cmake and make
 cmake ..
 make -j6
@@ -27,11 +28,21 @@ for file in *.bin *.dis *.elf *.hex *.uf2 *.elf.map; do
     fi
 done
 
+rm *.uf2 2> /dev/null
+rm *.bin 2> /dev/null
+rm *.dis 2> /dev/null
+rm *.elf 2> /dev/null
+rm *.hex 2> /dev/null
+rm *.elf.map 2> /dev/null
+
 #Check if the user inserted a file to execute
 if [ -z "$filetoexecute" ]; then
     echo "---->No file to execute. Build finished"
     exit 1
 fi
+
+
+
 
 echo "---->Detecting mounted RPIPico"
 #Check if rpipico is mounted
