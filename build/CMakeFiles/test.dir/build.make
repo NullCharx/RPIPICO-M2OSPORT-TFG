@@ -76,18 +76,18 @@ include CMakeFiles/test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/test.dir/flags.make
 
-CMakeFiles/test.dir/test.c.obj: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/test.c.obj: ../test.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test.dir/test.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test.dir/test.c.obj -c /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/test.c
+CMakeFiles/test.dir/test/test.c.obj: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/test/test.c.obj: test/test.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test.dir/test/test.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test.dir/test/test.c.obj -c /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/test/test.c
 
-CMakeFiles/test.dir/test.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test.dir/test.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/test.c > CMakeFiles/test.dir/test.c.i
+CMakeFiles/test.dir/test/test.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test.dir/test/test.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/test/test.c > CMakeFiles/test.dir/test/test.c.i
 
-CMakeFiles/test.dir/test.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test.dir/test.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/test.c -o CMakeFiles/test.dir/test.c.s
+CMakeFiles/test.dir/test/test.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test.dir/test/test.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/test/test.c -o CMakeFiles/test.dir/test/test.c.s
 
 CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: /home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
@@ -900,7 +900,7 @@ CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_us
 
 # Object files for target test
 test_OBJECTS = \
-"CMakeFiles/test.dir/test.c.obj" \
+"CMakeFiles/test.dir/test/test.c.obj" \
 "CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" \
 "CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" \
 "CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj" \
@@ -974,7 +974,7 @@ test_OBJECTS = \
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
-test.elf: CMakeFiles/test.dir/test.c.obj
+test.elf: CMakeFiles/test.dir/test/test.c.obj
 test.elf: CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 test.elf: CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 test.elf: CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj

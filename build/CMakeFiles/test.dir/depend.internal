@@ -2221,8 +2221,8 @@ CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_unique_id/uni
  /home/prrtchr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
  generated/pico_base/pico/config_autogen.h
  generated/pico_base/pico/version.h
-CMakeFiles/test.dir/test.c.obj
- /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/test.c
+CMakeFiles/test.dir/test/test.c.obj
+ /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/test/test.c
  /home/prrtchr/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/prrtchr/pico/pico-sdk/src/common/pico_base/include/pico.h
  /home/prrtchr/pico/pico-sdk/src/common/pico_base/include/pico/assert.h

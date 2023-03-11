@@ -174,7 +174,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c" "/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj"
   "/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
   "/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c" "/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj"
-  "/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/test.c" "/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles/test.dir/test.c.obj"
+  "/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/test/test.c" "/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles/test.dir/test/test.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

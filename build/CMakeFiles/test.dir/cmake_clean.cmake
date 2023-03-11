@@ -68,7 +68,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj"
   "CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
   "CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj"
-  "CMakeFiles/test.dir/test.c.obj"
+  "CMakeFiles/test.dir/test/test.c.obj"
   "test.elf"
   "test.pdb"
 )
