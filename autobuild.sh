@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 filetoexecute=$1
+usbdebug=$2
 export PICO_SDK_PATH=/home/prrtchr/pico/pico-sdk
 
 #Check if folder build exists in current directory
@@ -46,7 +47,7 @@ fi
 
 echo "---->Detecting mounted RPIPico"
 #Check if rpipico is mounted
-#TODO attempt to automatically mount the device
+
 if [ -d "/media/$(whoami)/RPI-RP2" ]; then
     echo "---->RPI-RP2 mounted. Attempting to copy file"
     cd "$filetoexecute"
@@ -54,9 +55,22 @@ if [ -d "/media/$(whoami)/RPI-RP2" ]; then
     #Copy the file to the mounted drive
     sudo cp "${filetoexecute}.uf2" "/media/$(whoami)/RPI-RP2/${filetoexecute}.uf2"
     sudo sync
-    sudo umount "/media/$(whoami)/RPI-RP2"
     echo "---->File: $filetoexecute copied to RPIPico. Build finished"
+    #Check if the user wants to debug, wether it is that the user entered a second argument with a 1 or true or othewise put 0, false or didnt add a second
+    #argument
+    if [ "$usbdebug" = "0" ] || [ "$usbdebug" = "false" ] || [ -z "$usbdebug" ]; then
+        echo "---->Debugging disabled. Build finished"
+    elif [ "$usbdebug" = "1" ] || [ "$usbdebug" = "true" ]; then
+        echo "---->Debugging enabled. Attempting to connect to RPIPico"
+        #Connect to the RPIPico using picotool sudo needed!
+        sudo minicom -b 115200 -o -D /dev/ttyACM0
+    else
+        echo "---->Unrecognized argument. Debugging disabled. Build finished"
+    fi
+    echo "Execution finished"
     exit 1
+
+
 else
     echo "---->RPIPico not mounted. Build finished"
     exit 1
