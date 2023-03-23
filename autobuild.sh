@@ -42,9 +42,6 @@ if [ -z "$filetoexecute" ]; then
     exit 1
 fi
 
-
-
-
 echo "---->Detecting mounted RPIPico"
 #Check if rpipico is mounted
 
@@ -62,7 +59,7 @@ if [ -d "/media/$(whoami)/RPI-RP2" ]; then
         echo "---->Debugging disabled. Build finished"
     elif [ "$usbdebug" = "1" ] || [ "$usbdebug" = "true" ]; then
         echo "---->Debugging enabled. Attempting to connect to RPIPico"
-        #Connect to the RPIPico using picotool sudo needed!
+        #Connect to the RPIPico using minicom sudo needed!
         sudo minicom -b 115200 -o -D /dev/ttyACM0
     else
         echo "---->Unrecognized argument. Debugging disabled. Build finished"
