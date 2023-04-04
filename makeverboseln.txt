@@ -1,0 +1,83 @@
+---->Build folder exists
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build
+/usr/bin/cmake -S/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG -B/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build//CMakeFiles/progress.marks
+make -s -f CMakeFiles/Makefile2 all
+make -s -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/depend
+make -s -f CMakeFiles/ELF2UF2Build.dir/build.make CMakeFiles/ELF2UF2Build.dir/depend
+make -s -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/depend
+cd /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG /home/prrtchr/pico/pico-sdk/src/rp2_common/boot_stage2 /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pico-sdk/src/rp2_common/boot_stage2 /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/DependInfo.cmake --color=
+make -s -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build
+cd /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles/ELF2UF2Build.dir/DependInfo.cmake --color=
+make -s -f CMakeFiles/ELF2UF2Build.dir/build.make CMakeFiles/ELF2UF2Build.dir/build
+cd /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG /home/prrtchr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pico-sdk/src/rp2_common/pico_cyw43_driver /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/DependInfo.cmake --color=
+make -s -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/build
+/usr/bin/cmake -E cmake_echo_color --switch= --blue --bold --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles --progress-num= "Performing build step for 'ELF2UF2Build'"
+cd /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/elf2uf2 && make
+/usr/bin/cmake -E cmake_echo_color --switch= --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles --progress-num=12 "Built target bs2_default"
+make -s -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/depend
+/usr/bin/cmake -E cmake_echo_color --switch= --blue --bold --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles --progress-num=11 "Performing build step for 'PioasmBuild'"
+cd /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pioasm && make
+cd /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG /home/prrtchr/pico/pico-sdk/src/rp2_common/boot_stage2 /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pico-sdk/src/rp2_common/boot_stage2 /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/DependInfo.cmake --color=
+make -s -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/build
+/usr/bin/cmake -S/home/prrtchr/pico/pico-sdk/tools/elf2uf2 -B/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/elf2uf2 --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/elf2uf2/CMakeFiles /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/elf2uf2//CMakeFiles/progress.marks
+make -s -f CMakeFiles/Makefile2 all
+/usr/bin/cmake -S/home/prrtchr/pico/pico-sdk/tools/pioasm -B/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pioasm --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pioasm/CMakeFiles /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pioasm//CMakeFiles/progress.marks
+make -s -f CMakeFiles/Makefile2 all
+/usr/bin/cmake -E cmake_echo_color --switch= --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles --progress-num=14,15 "Built target bs2_default_padded_checksummed_asm"
+make -s -f CMakeFiles/elf2uf2.dir/build.make CMakeFiles/elf2uf2.dir/depend
+make -s -f CMakeFiles/pioasm.dir/build.make CMakeFiles/pioasm.dir/depend
+cd /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/elf2uf2 && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/prrtchr/pico/pico-sdk/tools/elf2uf2 /home/prrtchr/pico/pico-sdk/tools/elf2uf2 /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/elf2uf2 /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/elf2uf2 /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/elf2uf2/CMakeFiles/elf2uf2.dir/DependInfo.cmake --color=
+make -s -f CMakeFiles/elf2uf2.dir/build.make CMakeFiles/elf2uf2.dir/build
+cd /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pioasm && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/prrtchr/pico/pico-sdk/tools/pioasm /home/prrtchr/pico/pico-sdk/tools/pioasm /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pioasm /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pioasm /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pioasm/CMakeFiles/pioasm.dir/DependInfo.cmake --color=
+make -s -f CMakeFiles/pioasm.dir/build.make CMakeFiles/pioasm.dir/build
+/usr/bin/cmake -E cmake_echo_color --switch= --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/elf2uf2/CMakeFiles --progress-num=1,2 "Built target elf2uf2"
+/usr/bin/cmake -E cmake_progress_start /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/elf2uf2/CMakeFiles 0
+/usr/bin/cmake -E cmake_echo_color --switch= --blue --bold --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles --progress-num=1 "No install step for 'ELF2UF2Build'"
+cd /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/elf2uf2 && /usr/bin/cmake -E echo_append
+cd /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/elf2uf2 && /usr/bin/cmake -E touch /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install
+/usr/bin/cmake -E cmake_echo_color --switch= --blue --bold --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles --progress-num= "Completed 'ELF2UF2Build'"
+/usr/bin/cmake -E make_directory /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles
+/usr/bin/cmake -E touch /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles/ELF2UF2Build-complete
+/usr/bin/cmake -E touch /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-done
+/usr/bin/cmake -E cmake_echo_color --switch= --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target ELF2UF2Build"
+make -s -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/depend
+/usr/bin/cmake -E cmake_echo_color --switch= --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pioasm/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target pioasm"
+make -s -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/depend
+/usr/bin/cmake -E cmake_progress_start /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pioasm/CMakeFiles 0
+/usr/bin/cmake -E cmake_echo_color --switch= --blue --bold --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles --progress-num=7 "No install step for 'PioasmBuild'"
+cd /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pioasm && /usr/bin/cmake -E echo_append
+cd /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pioasm && /usr/bin/cmake -E touch /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-install
+/usr/bin/cmake -E cmake_echo_color --switch= --blue --bold --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles --progress-num=6 "Completed 'PioasmBuild'"
+cd /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pico-sdk/src/rp2_common/pico_cyw43_driver && /usr/bin/cmake -E make_directory /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles
+cd /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pico-sdk/src/rp2_common/pico_cyw43_driver && /usr/bin/cmake -E touch /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild-complete
+cd /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pico-sdk/src/rp2_common/pico_cyw43_driver && /usr/bin/cmake -E touch /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-done
+/usr/bin/cmake -E cmake_echo_color --switch= --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles --progress-num=6,7,8,9,10,11 "Built target PioasmBuild"
+cd /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles/test.dir/DependInfo.cmake --color=
+make -s -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+cd /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles/helloworld.dir/DependInfo.cmake --color=
+make -s -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/build
+/usr/bin/cmake -E cmake_echo_color --switch= --green --bold --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles --progress-num=100 "Linking CXX executable test.elf"
+/usr/bin/cmake -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=
+/usr/bin/arm-none-eabi-objcopy -Oihex /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/test.elf test.hex
+/usr/bin/arm-none-eabi-objcopy -Obinary /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/test.elf test.bin
+/usr/bin/arm-none-eabi-objdump -h /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/test.elf > test.dis
+/usr/bin/arm-none-eabi-objdump -d /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/test.elf >> test.dis
+elf2uf2/elf2uf2 /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/test.elf test.uf2
+/usr/bin/cmake -E cmake_echo_color --switch= --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles --progress-num=67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target test"
+/usr/bin/cmake -E cmake_echo_color --switch= --green --bold --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles --progress-num=66 "Linking CXX executable helloworld.elf"
+/usr/bin/cmake -E cmake_link_script CMakeFiles/helloworld.dir/link.txt --verbose=
+/usr/bin/arm-none-eabi-objcopy -Oihex /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/helloworld.elf helloworld.hex
+/usr/bin/arm-none-eabi-objcopy -Obinary /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/helloworld.elf helloworld.bin
+/usr/bin/arm-none-eabi-objdump -h /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/helloworld.elf > helloworld.dis
+/usr/bin/arm-none-eabi-objdump -d /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/helloworld.elf >> helloworld.dis
+elf2uf2/elf2uf2 /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/helloworld.elf helloworld.uf2
+/usr/bin/cmake -E cmake_echo_color --switch= --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles --progress-num=16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66 "Built target helloworld"
+/usr/bin/cmake -E cmake_progress_start /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles 0
+---->Project built
+---->moving generated files to the build subdirectory
+---->No file to execute. Build finished

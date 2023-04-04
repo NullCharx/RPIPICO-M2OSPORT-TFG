@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 filetoexecute=$1
-usbdebug=$2
+debugtype=$2
 export PICO_SDK_PATH=/home/prrtchr/pico/pico-sdk
 
 #Check if folder build exists in current directory
@@ -16,7 +16,7 @@ cd build
 #Export path to pico-sdk (absolute path)
 #Preconfigure cmake and make
 cmake ..
-make -j6
+make -j6 --trace
 
 echo "---->Project built"
 
@@ -53,17 +53,34 @@ if [ -d "/media/$(whoami)/RPI-RP2" ]; then
     sudo cp "${filetoexecute}.uf2" "/media/$(whoami)/RPI-RP2/${filetoexecute}.uf2"
     sudo sync
     echo "---->File: $filetoexecute copied to RPIPico. Build finished"
-    #Check if the user wants to debug, wether it is that the user entered a second argument with a 1 or true or othewise put 0, false or didnt add a second
-    #argument
-    if [ "$usbdebug" = "0" ] || [ "$usbdebug" = "false" ] || [ -z "$usbdebug" ]; then
+    #Check what kind of debugging the user wants. If the user wants to use usb debugging, by putting "USB" or 1 then connect to the RPIPico using minicom
+    #If the user wants to use javascript debugging, by putting "JS" or 2 then copy the .hex to the rp2040js foldder and run npm install and npm start
+    #I the user puts 0, "none", nothing or anything else then dont debug
+
+    if [ "$debugtype" = "0" ] || [ "$debugtype" = "none" ] || [ -z "$debugtype" ]; then
         echo "---->Debugging disabled. Build finished"
-    elif [ "$usbdebug" = "1" ] || [ "$usbdebug" = "true" ]; then
+    elif [ "$debugtype" = "1" ] || [ "$debugtype" = "USB" ] || [ "$debugtype" = "usb" ]; then
         echo "---->Debugging enabled. Attempting to connect to RPIPico"
         #Connect to the RPIPico using minicom sudo needed!
         sudo minicom -b 115200 -o -D /dev/ttyACM0
+    elif [ "$debugtype" = "2" ] || [ "$debugtype" = "JS" ] || [ "$debugtype" = "js" ]; then
+        echo "---->Debugging enabled. Attempting to debug via javascript debugger"
+        #Copy the .hex file to the rp2040js folder
+        cp "${filetoexecute}.hex" "/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/rp2040js/${filetoexecute}.hex"
+        echo "---->File copied to rp2040js folder. Attempting to launch server"
+        #Change to the rp2040js folder
+        cd /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/rp2040js/
+        #Install the dependencies
+        npm install
+        #Start the server
+        npm start
     else
         echo "---->Unrecognized argument. Debugging disabled. Build finished"
     fi
+
+    #The same as above but for javascript debugging
+
+
     echo "Execution finished"
     exit 1
 
