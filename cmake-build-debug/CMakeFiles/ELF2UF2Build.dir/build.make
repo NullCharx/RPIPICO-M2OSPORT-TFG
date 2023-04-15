@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.174/bin/cmake/linux/x64/bin/cmake
+CMAKE_COMMAND = /jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/cmake
 
 # The command to remove a file.
-RM = /jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.174/bin/cmake/linux/x64/bin/cmake -E rm -f
+RM = /jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -77,9 +77,9 @@ CMakeFiles/ELF2UF2Build-complete: elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-co
 CMakeFiles/ELF2UF2Build-complete: elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build
 CMakeFiles/ELF2UF2Build-complete: elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'ELF2UF2Build'"
-	/jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.174/bin/cmake/linux/x64/bin/cmake -E make_directory /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/CMakeFiles
-	/jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.174/bin/cmake/linux/x64/bin/cmake -E touch /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/CMakeFiles/ELF2UF2Build-complete
-	/jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.174/bin/cmake/linux/x64/bin/cmake -E touch /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-done
+	/jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/cmake -E make_directory /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/CMakeFiles
+	/jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/cmake -E touch /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/CMakeFiles/ELF2UF2Build-complete
+	/jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/cmake -E touch /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-done
 
 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build: elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'ELF2UF2Build'"
@@ -88,33 +88,33 @@ elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build: elf2uf2/src/ELF2UF2Build-stam
 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure: elf2uf2/tmp/ELF2UF2Build-cfgcmd.txt
 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure: elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'ELF2UF2Build'"
-	cd /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/elf2uf2 && /jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.174/bin/cmake/linux/x64/bin/cmake -DCMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/gmake "-GCodeBlocks - Unix Makefiles" /home/prrtchr/pico/pico-sdk/tools/elf2uf2
-	cd /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/elf2uf2 && /jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.174/bin/cmake/linux/x64/bin/cmake -E touch /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
+	cd /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/elf2uf2 && /jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/cmake -DCMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/gmake "-GCodeBlocks - Unix Makefiles" /home/prrtchr/pico/pico-sdk/tools/elf2uf2
+	cd /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/elf2uf2 && /jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/cmake -E touch /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
 
 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download: elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-source_dirinfo.txt
 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download: elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'ELF2UF2Build'"
-	/jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.174/bin/cmake/linux/x64/bin/cmake -E echo_append
-	/jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.174/bin/cmake/linux/x64/bin/cmake -E touch /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download
+	/jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/cmake -E echo_append
+	/jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/cmake -E touch /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download
 
 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install: elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'ELF2UF2Build'"
-	cd /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/elf2uf2 && /jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.174/bin/cmake/linux/x64/bin/cmake -E echo_append
+	cd /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/elf2uf2 && /jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/cmake -E echo_append
 
 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'ELF2UF2Build'"
-	/jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.174/bin/cmake/linux/x64/bin/cmake -Dcfgdir= -P /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/elf2uf2/tmp/ELF2UF2Build-mkdirs.cmake
-	/jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.174/bin/cmake/linux/x64/bin/cmake -E touch /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir
+	/jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/cmake -Dcfgdir= -P /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/elf2uf2/tmp/ELF2UF2Build-mkdirs.cmake
+	/jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/cmake -E touch /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir
 
 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch: elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'ELF2UF2Build'"
-	/jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.174/bin/cmake/linux/x64/bin/cmake -E echo_append
-	/jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.174/bin/cmake/linux/x64/bin/cmake -E touch /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch
+	/jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/cmake -E echo_append
+	/jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/cmake -E touch /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch
 
 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update: elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No update step for 'ELF2UF2Build'"
-	/jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.174/bin/cmake/linux/x64/bin/cmake -E echo_append
-	/jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.174/bin/cmake/linux/x64/bin/cmake -E touch /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update
+	/jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/cmake -E echo_append
+	/jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/cmake -E touch /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update
 
 ELF2UF2Build: CMakeFiles/ELF2UF2Build
 ELF2UF2Build: CMakeFiles/ELF2UF2Build-complete
