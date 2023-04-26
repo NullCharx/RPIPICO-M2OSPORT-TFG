@@ -61,7 +61,7 @@ if [ -d "/media/$(whoami)/RPI-RP2" ]; then
         echo "---->Debugging disabled. Build finished"
     elif [ "$debugtype" = "1" ] || [ "$debugtype" = "USB" ] || [ "$debugtype" = "usb" ]; then
         echo "---->Debugging enabled. Attempting to connect to RPIPico"
-        #Connect to the RPIPico using minicom sudo needed!
+        #Connect to the RPIPico using minicom sudo needed! (Or add user to the dialout group)
         sudo minicom -b 115200 -o -D /dev/ttyACM0
     elif [ "$debugtype" = "2" ]  || [ "$debugtype" = "JS" ] || [ "$debugtype" = "js" ]; then
         echo "---->Debugging enabled. Attempting to debug via javascript debugger"
@@ -79,8 +79,6 @@ if [ -d "/media/$(whoami)/RPI-RP2" ]; then
     fi
 
     #The same as above but for javascript debugging
-
-
     echo "Execution finished"
     exit 1
 
