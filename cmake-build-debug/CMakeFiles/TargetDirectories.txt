@@ -3,6 +3,9 @@
 /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/CMakeFiles/helloworld.dir
 /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/libs/dummy_lib/CMakeFiles/dummy_lib.dir
+/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/libs/dummy_lib/CMakeFiles/edit_cache.dir
+/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/libs/dummy_lib/CMakeFiles/rebuild_cache.dir
 /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/pico-sdk/CMakeFiles/edit_cache.dir
 /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/pico-sdk/CMakeFiles/rebuild_cache.dir
 /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/pico-sdk/tools/CMakeFiles/edit_cache.dir

@@ -156,6 +156,19 @@ helloworld/fast:
 .PHONY : helloworld/fast
 
 #=============================================================================
+# Target rules for targets named dummy_lib
+
+# Build rule for target.
+dummy_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dummy_lib
+.PHONY : dummy_lib
+
+# fast build rule for target.
+dummy_lib/fast:
+	$(MAKE) $(MAKESILENT) -f libs/dummy_lib/CMakeFiles/dummy_lib.dir/build.make libs/dummy_lib/CMakeFiles/dummy_lib.dir/build
+.PHONY : dummy_lib/fast
+
+#=============================================================================
 # Target rules for targets named bs2_default
 
 # Build rule for target.
@@ -273,6 +286,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: home/pr
 
 # target to build an object file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 
@@ -281,6 +295,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: home/prrt
 
 # target to preprocess a source file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 
@@ -289,6 +304,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: home/prrt
 
 # target to generate assembly for a file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 
@@ -297,6 +313,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: home/prrtch
 
 # target to build an object file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 
@@ -305,6 +322,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: home/prrtchr/
 
 # target to preprocess a source file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 
@@ -313,6 +331,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: home/prrtchr/
 
 # target to generate assembly for a file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 
@@ -321,6 +340,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: home/prrtch
 
 # target to build an object file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
 
@@ -329,6 +349,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: home/prrtchr/
 
 # target to preprocess a source file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 
@@ -337,6 +358,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: home/prrtchr/
 
 # target to generate assembly for a file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 
@@ -345,6 +367,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: home/prr
 
 # target to build an object file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 
@@ -353,6 +376,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home/prrtc
 
 # target to preprocess a source file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 
@@ -361,6 +385,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home/prrtc
 
 # target to generate assembly for a file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 
@@ -369,6 +394,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: home/prrtch
 
 # target to build an object file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 
@@ -377,6 +403,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: home/prrtchr/
 
 # target to preprocess a source file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 
@@ -385,6 +412,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: home/prrtchr/
 
 # target to generate assembly for a file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 
@@ -393,6 +421,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj: home/prrt
 
 # target to build an object file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 
@@ -401,6 +430,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: home/prrtch
 
 # target to preprocess a source file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 
@@ -409,6 +439,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: home/prrtch
 
 # target to generate assembly for a file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 
@@ -417,6 +448,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: home/prrtch
 
 # target to build an object file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 
@@ -425,6 +457,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: home/prrtchr/
 
 # target to preprocess a source file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 
@@ -433,6 +466,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: home/prrtchr/
 
 # target to generate assembly for a file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 
@@ -441,6 +475,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj: home/
 
 # target to build an object file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
 
@@ -449,6 +484,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: home/pr
 
 # target to preprocess a source file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 
@@ -457,6 +493,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: home/pr
 
 # target to generate assembly for a file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 
@@ -465,6 +502,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj: home/prrtch
 
 # target to build an object file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
 
@@ -473,6 +511,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: home/prrtchr/
 
 # target to preprocess a source file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 
@@ -481,6 +520,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: home/prrtchr/
 
 # target to generate assembly for a file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 
@@ -489,6 +529,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: home/
 
 # target to build an object file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 
@@ -497,6 +538,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: home/pr
 
 # target to preprocess a source file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 
@@ -505,6 +547,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: home/pr
 
 # target to generate assembly for a file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 
@@ -513,6 +556,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj: home/
 
 # target to build an object file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 
@@ -521,6 +565,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: home/pr
 
 # target to preprocess a source file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 
@@ -529,6 +574,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: home/pr
 
 # target to generate assembly for a file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 
@@ -537,6 +583,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.obj: home/pr
 
 # target to build an object file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
 
@@ -545,6 +592,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i: home/prrt
 
 # target to preprocess a source file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 
@@ -553,6 +601,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s: home/prrt
 
 # target to generate assembly for a file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 
@@ -561,6 +610,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: home/prrtchr/pi
 
 # target to build an object file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 
@@ -569,6 +619,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: home/prrtchr/pico
 
 # target to preprocess a source file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 
@@ -577,6 +628,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: home/prrtchr/pico
 
 # target to generate assembly for a file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 
@@ -585,6 +637,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd.obj: home/prrtchr/pico/pi
 
 # target to build an object file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 
@@ -593,6 +646,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd.i: home/prrtchr/pico/pico
 
 # target to preprocess a source file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 
@@ -601,6 +655,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd.s: home/prrtchr/pico/pico
 
 # target to generate assembly for a file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 
@@ -609,6 +664,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj: home/prrtchr
 
 # target to build an object file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 
@@ -617,6 +673,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i: home/prrtchr/p
 
 # target to preprocess a source file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 
@@ -625,6 +682,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s: home/prrtchr/p
 
 # target to generate assembly for a file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 
@@ -633,6 +691,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp204
 
 # target to build an object file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 
@@ -641,6 +700,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp204
 
 # target to preprocess a source file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 
@@ -649,6 +709,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp204
 
 # target to generate assembly for a file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 
@@ -657,6 +718,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_us
 
 # target to build an object file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 
@@ -665,6 +727,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_us
 
 # target to preprocess a source file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 
@@ -673,6 +736,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_us
 
 # target to generate assembly for a file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 
@@ -681,6 +745,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/tusb.obj: home/prrtchr/pico/pico-sdk/
 
 # target to build an object file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
 
@@ -689,6 +754,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/tusb.i: home/prrtchr/pico/pico-sdk/li
 
 # target to preprocess a source file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/tusb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
 
@@ -697,6 +763,7 @@ home/prrtchr/pico/pico-sdk/lib/tinyusb/src/tusb.s: home/prrtchr/pico/pico-sdk/li
 
 # target to generate assembly for a file
 home/prrtchr/pico/pico-sdk/lib/tinyusb/src/tusb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
 .PHONY : home/prrtchr/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
 
@@ -1011,6 +1078,7 @@ home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj: home/prrtchr
 
 # target to build an object file
 home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 .PHONY : home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 
@@ -1019,6 +1087,7 @@ home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/prrtchr/p
 
 # target to preprocess a source file
 home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 .PHONY : home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 
@@ -1027,6 +1096,7 @@ home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s: home/prrtchr/p
 
 # target to generate assembly for a file
 home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 .PHONY : home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
@@ -1404,6 +1474,7 @@ home/prrtchr/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration
 
 # target to build an object file
 home/prrtchr/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 .PHONY : home/prrtchr/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 
@@ -1412,6 +1483,7 @@ home/prrtchr/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration
 
 # target to preprocess a source file
 home/prrtchr/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 .PHONY : home/prrtchr/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 
@@ -1420,6 +1492,7 @@ home/prrtchr/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration
 
 # target to generate assembly for a file
 home/prrtchr/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 .PHONY : home/prrtchr/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
@@ -1711,35 +1784,12 @@ home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
-home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-.PHONY : home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj
-
-# target to build an object file
-home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-.PHONY : home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-
-home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-.PHONY : home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i
-
-# target to preprocess a source file
-home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-.PHONY : home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-
-home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-.PHONY : home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s
-
-# target to generate assembly for a file
-home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-.PHONY : home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-
 home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj: home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
 .PHONY : home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj
 
 # target to build an object file
 home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
 .PHONY : home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
 
@@ -1748,6 +1798,7 @@ home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: home
 
 # target to preprocess a source file
 home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 .PHONY : home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 
@@ -1756,6 +1807,7 @@ home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: home
 
 # target to generate assembly for a file
 home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 .PHONY : home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 
@@ -1764,6 +1816,7 @@ home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj: home/prr
 
 # target to build an object file
 home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
 .PHONY : home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
 
@@ -1772,6 +1825,7 @@ home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: home/prrtc
 
 # target to preprocess a source file
 home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 .PHONY : home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 
@@ -1780,6 +1834,7 @@ home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: home/prrtc
 
 # target to generate assembly for a file
 home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 .PHONY : home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 
@@ -1788,6 +1843,7 @@ home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.o
 
 # target to build an object file
 home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
 .PHONY : home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
 
@@ -1796,6 +1852,7 @@ home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i
 
 # target to preprocess a source file
 home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 .PHONY : home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 
@@ -1804,6 +1861,7 @@ home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s
 
 # target to generate assembly for a file
 home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 .PHONY : home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 
@@ -1839,6 +1897,7 @@ home/prrtchr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj: home/prr
 
 # target to build an object file
 home/prrtchr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 .PHONY : home/prrtchr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 
@@ -1847,6 +1906,7 @@ home/prrtchr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: home/prrtc
 
 # target to preprocess a source file
 home/prrtchr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 .PHONY : home/prrtchr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 
@@ -1855,6 +1915,7 @@ home/prrtchr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: home/prrtc
 
 # target to generate assembly for a file
 home/prrtchr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : home/prrtchr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
@@ -1872,6 +1933,7 @@ help:
 	@echo "... bs2_default_padded_checksummed_asm"
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
 	@echo "... bs2_default"
+	@echo "... dummy_lib"
 	@echo "... helloworld"
 	@echo "... test"
 	@echo "... build/helloworld/helloworld.obj"
@@ -2047,9 +2109,6 @@ help:
 	@echo "... home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj"
 	@echo "... home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i"
 	@echo "... home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s"
-	@echo "... home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj"
-	@echo "... home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i"
-	@echo "... home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s"
 	@echo "... home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj"
 	@echo "... home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i"
 	@echo "... home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s"

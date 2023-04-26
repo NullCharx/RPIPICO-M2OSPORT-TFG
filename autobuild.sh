@@ -63,7 +63,7 @@ if [ -d "/media/$(whoami)/RPI-RP2" ]; then
         echo "---->Debugging enabled. Attempting to connect to RPIPico"
         #Connect to the RPIPico using minicom sudo needed!
         sudo minicom -b 115200 -o -D /dev/ttyACM0
-    elif [ "$debugtype" = "2" ] || [ "$debugtype" = "JS" ] || [ "$debugtype" = "js" ]; then
+    elif [ "$debugtype" = "2" ]  || [ "$debugtype" = "JS" ] || [ "$debugtype" = "js" ]; then
         echo "---->Debugging enabled. Attempting to debug via javascript debugger"
         #Copy the .hex file to the rp2040js folder
         cp "${filetoexecute}.hex" "/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/rp2040js/${filetoexecute}.hex"

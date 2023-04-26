@@ -2,6 +2,7 @@
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
 #include "pico/binary_info.h"
+#include "dummy_lib.h"
 
 const uint LED_PIN = 25;
 
@@ -18,6 +19,7 @@ int main() {
         sleep_ms(250);
         gpio_put(LED_PIN, 1);
         puts("Hello World\n");
+        printf("Test of dummy lib: Mean of %f and %f is %f\n", 1.0, 2.0, dummy_mean(2.0, 2.0));
         sleep_ms(1000);
     }
 }

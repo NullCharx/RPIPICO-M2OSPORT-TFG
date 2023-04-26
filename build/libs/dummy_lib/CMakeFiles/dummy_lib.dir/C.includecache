@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/libs/dummy_lib/dummy_lib.c
+dummy_lib.h
+/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/libs/dummy_lib/dummy_lib.h
+
+/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/libs/dummy_lib/dummy_lib.h
+

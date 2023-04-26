@@ -3,6 +3,9 @@
 /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles/ELF2UF2Build.dir
 /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles/edit_cache.dir
 /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles/test.dir
+/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/libs/dummy_lib/CMakeFiles/rebuild_cache.dir
+/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/libs/dummy_lib/CMakeFiles/edit_cache.dir
+/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/libs/dummy_lib/CMakeFiles/dummy_lib.dir
 /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pico-sdk/CMakeFiles/rebuild_cache.dir
 /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pico-sdk/CMakeFiles/edit_cache.dir
 /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/pico-sdk/tools/CMakeFiles/rebuild_cache.dir

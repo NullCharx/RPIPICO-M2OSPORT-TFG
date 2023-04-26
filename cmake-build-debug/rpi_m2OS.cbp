@@ -5,7 +5,7 @@
 		<Option title="rpi_m2OS"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\pico-sdk\;CMake Files\..\pico-sdk\src\;CMake Files\..\pico-sdk\src\common\;CMake Files\..\pico-sdk\src\common\pico_base\;CMake Files\..\pico-sdk\src\common\pico_base\include\;CMake Files\..\pico-sdk\src\common\pico_base\include\pico\;CMake Files\..\pico-sdk\src\common\boot_picoboot\;CMake Files\..\pico-sdk\src\common\boot_uf2\;CMake Files\..\pico-sdk\src\common\pico_usb_reset_interface\;CMake Files\..\pico-sdk\src\common\pico_bit_ops\;CMake Files\..\pico-sdk\src\common\pico_binary_info\;CMake Files\..\pico-sdk\src\common\pico_divider\;CMake Files\..\pico-sdk\src\common\pico_sync\;CMake Files\..\pico-sdk\src\common\pico_time\;CMake Files\..\pico-sdk\src\common\pico_util\;CMake Files\..\pico-sdk\src\common\pico_stdlib\;CMake Files\..\pico-sdk\src\boards\;CMake Files\..\pico-sdk\src\rp2_common\;CMake Files\..\pico-sdk\src\rp2_common\hardware_base\;CMake Files\..\pico-sdk\src\rp2_common\hardware_claim\;CMake Files\..\pico-sdk\src\rp2_common\hardware_adc\;CMake Files\..\pico-sdk\src\rp2_common\hardware_clocks\;CMake Files\..\pico-sdk\src\rp2_common\hardware_dma\;CMake Files\..\pico-sdk\src\rp2_common\hardware_divider\;CMake Files\..\pico-sdk\src\rp2_common\hardware_exception\;CMake Files\..\pico-sdk\src\rp2_common\hardware_flash\;CMake Files\..\pico-sdk\src\rp2_common\hardware_gpio\;CMake Files\..\pico-sdk\src\rp2_common\hardware_i2c\;CMake Files\..\pico-sdk\src\rp2_common\hardware_interp\;CMake Files\..\pico-sdk\src\rp2_common\hardware_irq\;CMake Files\..\pico-sdk\src\rp2_common\hardware_pio\;CMake Files\..\pico-sdk\src\rp2_common\hardware_pll\;CMake Files\..\pico-sdk\src\rp2_common\hardware_pwm\;CMake Files\..\pico-sdk\src\rp2_common\hardware_resets\;CMake Files\..\pico-sdk\src\rp2_common\hardware_rtc\;CMake Files\..\pico-sdk\src\rp2_common\hardware_spi\;CMake Files\..\pico-sdk\src\rp2_common\hardware_sync\;CMake Files\..\pico-sdk\src\rp2_common\hardware_timer\;CMake Files\..\pico-sdk\src\rp2_common\hardware_uart\;CMake Files\..\pico-sdk\src\rp2_common\hardware_vreg\;CMake Files\..\pico-sdk\src\rp2_common\hardware_watchdog\;CMake Files\..\pico-sdk\src\rp2_common\hardware_xosc\;CMake Files\..\pico-sdk\src\rp2_common\pico_bootrom\;CMake Files\..\pico-sdk\src\rp2_common\pico_platform\;CMake Files\..\pico-sdk\src\rp2_common\boot_stage2\;CMake Files\..\pico-sdk\src\rp2_common\pico_bootsel_via_double_reset\;CMake Files\..\pico-sdk\src\rp2_common\pico_multicore\;CMake Files\..\pico-sdk\src\rp2_common\pico_unique_id\;CMake Files\..\pico-sdk\src\rp2_common\pico_bit_ops\;CMake Files\..\pico-sdk\src\rp2_common\pico_divider\;CMake Files\..\pico-sdk\src\rp2_common\pico_double\;CMake Files\..\pico-sdk\src\rp2_common\pico_int64_ops\;CMake Files\..\pico-sdk\src\rp2_common\pico_float\;CMake Files\..\pico-sdk\src\rp2_common\pico_mem_ops\;CMake Files\..\pico-sdk\src\rp2_common\pico_malloc\;CMake Files\..\pico-sdk\src\rp2_common\pico_printf\;CMake Files\..\pico-sdk\src\rp2_common\pico_rand\;CMake Files\..\pico-sdk\src\rp2_common\pico_stdio\;CMake Files\..\pico-sdk\src\rp2_common\pico_stdio_semihosting\;CMake Files\..\pico-sdk\src\rp2_common\pico_stdio_uart\;CMake Files\..\pico-sdk\src\rp2_common\cmsis\;CMake Files\..\pico-sdk\src\rp2_common\tinyusb\;CMake Files\..\pico-sdk\src\rp2_common\pico_stdio_usb\;CMake Files\..\pico-sdk\src\rp2_common\pico_i2c_slave\;CMake Files\..\pico-sdk\src\rp2_common\pico_async_context\;CMake Files\..\pico-sdk\src\rp2_common\pico_btstack\;CMake Files\..\pico-sdk\src\rp2_common\pico_cyw43_driver\;CMake Files\..\pico-sdk\src\rp2_common\pico_cyw43_driver\cybt_shared_bus\;CMake Files\..\pico-sdk\src\rp2_common\pico_lwip\;CMake Files\..\pico-sdk\src\rp2_common\pico_cyw43_arch\;CMake Files\..\pico-sdk\src\rp2_common\pico_mbedtls\;CMake Files\..\pico-sdk\src\rp2_common\pico_stdlib\;CMake Files\..\pico-sdk\src\rp2_common\pico_cxx_options\;CMake Files\..\pico-sdk\src\rp2_common\pico_standard_link\;CMake Files\..\pico-sdk\src\rp2_common\pico_fix\;CMake Files\..\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\;CMake Files\..\pico-sdk\src\rp2_common\pico_runtime\;CMake Files\..\pico-sdk\src\rp2040\;CMake Files\..\pico-sdk\src\rp2040\hardware_regs\;CMake Files\..\pico-sdk\src\rp2040\hardware_structs\;CMake Files\..\pico-sdk\tools\;CMake Files\..\pico-sdk\lib\;CMake Files\..\pico-sdk\lib\tinyusb\;CMake Files\..\pico-sdk\lib\tinyusb\hw\;CMake Files\..\pico-sdk\lib\tinyusb\hw\bsp\;CMake Files\..\pico-sdk\lib\tinyusb\hw\bsp\rp2040\;CMake Files\..\pico-sdk\lib\tinyusb\hw\bsp\rp2040\boards\;CMake Files\..\pico-sdk\lib\tinyusb\hw\bsp\rp2040\boards\pico_sdk\;CMake Files\..\pico-sdk\docs\;CMake Files\..\pico-sdk\cmake\;CMake Files\..\pico-sdk\cmake\preload\;CMake Files\..\pico-sdk\cmake\preload\platforms\;CMake Files\..\pico-sdk\cmake\preload\platforms\pico\;CMake Files\..\pico-sdk\cmake\preload\toolchains\;CMake Files\..\pico-sdk\cmake\Platform\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\pico-sdk\;CMake Files\cmake-build-debug\pico-sdk\src\;CMake Files\cmake-build-debug\pico-sdk\src\rp2_common\;CMake Files\cmake-build-debug\pico-sdk\src\rp2_common\pico_cyw43_driver\;CMake Files\cmake-build-debug\pico-sdk\src\rp2_common\pico_cyw43_driver\pioasm\;CMake Files\cmake-build-debug\pico-sdk\src\rp2_common\pico_cyw43_driver\pioasm\tmp\;CMake Files\cmake-build-debug\elf2uf2\;CMake Files\cmake-build-debug\elf2uf2\tmp\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\pico-sdk\;CMake Files\..\pico-sdk\src\;CMake Files\..\pico-sdk\src\common\;CMake Files\..\pico-sdk\src\common\pico_base\;CMake Files\..\pico-sdk\src\common\pico_base\include\;CMake Files\..\pico-sdk\src\common\pico_base\include\pico\;CMake Files\..\pico-sdk\src\common\boot_picoboot\;CMake Files\..\pico-sdk\src\common\boot_uf2\;CMake Files\..\pico-sdk\src\common\pico_usb_reset_interface\;CMake Files\..\pico-sdk\src\common\pico_bit_ops\;CMake Files\..\pico-sdk\src\common\pico_binary_info\;CMake Files\..\pico-sdk\src\common\pico_divider\;CMake Files\..\pico-sdk\src\common\pico_sync\;CMake Files\..\pico-sdk\src\common\pico_time\;CMake Files\..\pico-sdk\src\common\pico_util\;CMake Files\..\pico-sdk\src\common\pico_stdlib\;CMake Files\..\pico-sdk\src\boards\;CMake Files\..\pico-sdk\src\rp2_common\;CMake Files\..\pico-sdk\src\rp2_common\hardware_base\;CMake Files\..\pico-sdk\src\rp2_common\hardware_claim\;CMake Files\..\pico-sdk\src\rp2_common\hardware_adc\;CMake Files\..\pico-sdk\src\rp2_common\hardware_clocks\;CMake Files\..\pico-sdk\src\rp2_common\hardware_dma\;CMake Files\..\pico-sdk\src\rp2_common\hardware_divider\;CMake Files\..\pico-sdk\src\rp2_common\hardware_exception\;CMake Files\..\pico-sdk\src\rp2_common\hardware_flash\;CMake Files\..\pico-sdk\src\rp2_common\hardware_gpio\;CMake Files\..\pico-sdk\src\rp2_common\hardware_i2c\;CMake Files\..\pico-sdk\src\rp2_common\hardware_interp\;CMake Files\..\pico-sdk\src\rp2_common\hardware_irq\;CMake Files\..\pico-sdk\src\rp2_common\hardware_pio\;CMake Files\..\pico-sdk\src\rp2_common\hardware_pll\;CMake Files\..\pico-sdk\src\rp2_common\hardware_pwm\;CMake Files\..\pico-sdk\src\rp2_common\hardware_resets\;CMake Files\..\pico-sdk\src\rp2_common\hardware_rtc\;CMake Files\..\pico-sdk\src\rp2_common\hardware_spi\;CMake Files\..\pico-sdk\src\rp2_common\hardware_sync\;CMake Files\..\pico-sdk\src\rp2_common\hardware_timer\;CMake Files\..\pico-sdk\src\rp2_common\hardware_uart\;CMake Files\..\pico-sdk\src\rp2_common\hardware_vreg\;CMake Files\..\pico-sdk\src\rp2_common\hardware_watchdog\;CMake Files\..\pico-sdk\src\rp2_common\hardware_xosc\;CMake Files\..\pico-sdk\src\rp2_common\pico_bootrom\;CMake Files\..\pico-sdk\src\rp2_common\pico_platform\;CMake Files\..\pico-sdk\src\rp2_common\boot_stage2\;CMake Files\..\pico-sdk\src\rp2_common\pico_bootsel_via_double_reset\;CMake Files\..\pico-sdk\src\rp2_common\pico_multicore\;CMake Files\..\pico-sdk\src\rp2_common\pico_unique_id\;CMake Files\..\pico-sdk\src\rp2_common\pico_bit_ops\;CMake Files\..\pico-sdk\src\rp2_common\pico_divider\;CMake Files\..\pico-sdk\src\rp2_common\pico_double\;CMake Files\..\pico-sdk\src\rp2_common\pico_int64_ops\;CMake Files\..\pico-sdk\src\rp2_common\pico_float\;CMake Files\..\pico-sdk\src\rp2_common\pico_mem_ops\;CMake Files\..\pico-sdk\src\rp2_common\pico_malloc\;CMake Files\..\pico-sdk\src\rp2_common\pico_printf\;CMake Files\..\pico-sdk\src\rp2_common\pico_rand\;CMake Files\..\pico-sdk\src\rp2_common\pico_stdio\;CMake Files\..\pico-sdk\src\rp2_common\pico_stdio_semihosting\;CMake Files\..\pico-sdk\src\rp2_common\pico_stdio_uart\;CMake Files\..\pico-sdk\src\rp2_common\cmsis\;CMake Files\..\pico-sdk\src\rp2_common\tinyusb\;CMake Files\..\pico-sdk\src\rp2_common\pico_stdio_usb\;CMake Files\..\pico-sdk\src\rp2_common\pico_i2c_slave\;CMake Files\..\pico-sdk\src\rp2_common\pico_async_context\;CMake Files\..\pico-sdk\src\rp2_common\pico_btstack\;CMake Files\..\pico-sdk\src\rp2_common\pico_cyw43_driver\;CMake Files\..\pico-sdk\src\rp2_common\pico_cyw43_driver\cybt_shared_bus\;CMake Files\..\pico-sdk\src\rp2_common\pico_lwip\;CMake Files\..\pico-sdk\src\rp2_common\pico_cyw43_arch\;CMake Files\..\pico-sdk\src\rp2_common\pico_mbedtls\;CMake Files\..\pico-sdk\src\rp2_common\pico_stdlib\;CMake Files\..\pico-sdk\src\rp2_common\pico_cxx_options\;CMake Files\..\pico-sdk\src\rp2_common\pico_standard_link\;CMake Files\..\pico-sdk\src\rp2_common\pico_fix\;CMake Files\..\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\;CMake Files\..\pico-sdk\src\rp2_common\pico_runtime\;CMake Files\..\pico-sdk\src\rp2040\;CMake Files\..\pico-sdk\src\rp2040\hardware_regs\;CMake Files\..\pico-sdk\src\rp2040\hardware_structs\;CMake Files\..\pico-sdk\tools\;CMake Files\..\pico-sdk\lib\;CMake Files\..\pico-sdk\lib\tinyusb\;CMake Files\..\pico-sdk\lib\tinyusb\hw\;CMake Files\..\pico-sdk\lib\tinyusb\hw\bsp\;CMake Files\..\pico-sdk\lib\tinyusb\hw\bsp\rp2040\;CMake Files\..\pico-sdk\lib\tinyusb\hw\bsp\rp2040\boards\;CMake Files\..\pico-sdk\lib\tinyusb\hw\bsp\rp2040\boards\pico_sdk\;CMake Files\..\pico-sdk\docs\;CMake Files\..\pico-sdk\cmake\;CMake Files\..\pico-sdk\cmake\preload\;CMake Files\..\pico-sdk\cmake\preload\platforms\;CMake Files\..\pico-sdk\cmake\preload\platforms\pico\;CMake Files\..\pico-sdk\cmake\preload\toolchains\;CMake Files\..\pico-sdk\cmake\Platform\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\pico-sdk\;CMake Files\cmake-build-debug\pico-sdk\src\;CMake Files\cmake-build-debug\pico-sdk\src\rp2_common\;CMake Files\cmake-build-debug\pico-sdk\src\rp2_common\pico_cyw43_driver\;CMake Files\cmake-build-debug\pico-sdk\src\rp2_common\pico_cyw43_driver\pioasm\;CMake Files\cmake-build-debug\pico-sdk\src\rp2_common\pico_cyw43_driver\pioasm\tmp\;CMake Files\cmake-build-debug\elf2uf2\;CMake Files\cmake-build-debug\elf2uf2\tmp\;CMake Files\libs\;CMake Files\libs\dummy_lib\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug"/>
@@ -60,7 +60,12 @@
 					<Add option="-DPICO_CMAKE_BUILD_TYPE=&quot;Debug&quot;"/>
 					<Add option="-DPICO_CXX_ENABLE_EXCEPTIONS=0"/>
 					<Add option="-DLIB_PICO_STDIO=1"/>
-					<Add option="-DLIB_PICO_STDIO_UART=1"/>
+					<Add option="-DLIB_PICO_STDIO_USB=1"/>
+					<Add option="-DLIB_PICO_UNIQUE_ID=1"/>
+					<Add option="-DPICO_RP2040_USB_DEVICE_UFRAME_FIX=1"/>
+					<Add option="-DCFG_TUSB_MCU=OPT_MCU_RP2040"/>
+					<Add option="-DCFG_TUSB_OS=OPT_OS_PICO"/>
+					<Add option="-DLIB_PICO_FIX_RP2040_USB_DEVICE_ENUMERATION=1"/>
 					<Add directory="/home/prrtchr/pico/pico-sdk/src/common/pico_stdlib/include"/>
 					<Add directory="/home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_gpio/include"/>
 					<Add directory="/home/prrtchr/pico/pico-sdk/src/common/pico_base/include"/>
@@ -95,10 +100,18 @@
 					<Add directory="/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_bootrom/include"/>
 					<Add directory="/home/prrtchr/pico/pico-sdk/src/common/pico_binary_info/include"/>
 					<Add directory="/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio/include"/>
-					<Add directory="/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include"/>
+					<Add directory="/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include"/>
+					<Add directory="/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_unique_id/include"/>
+					<Add directory="/home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_flash/include"/>
+					<Add directory="/home/prrtchr/pico/pico-sdk/src/common/pico_usb_reset_interface/include"/>
 					<Add directory="/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_int64_ops/include"/>
 					<Add directory="/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_mem_ops/include"/>
 					<Add directory="/home/prrtchr/pico/pico-sdk/src/rp2_common/boot_stage2/include"/>
+					<Add directory="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src"/>
+					<Add directory="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/common"/>
+					<Add directory="/home/prrtchr/pico/pico-sdk/lib/tinyusb/hw"/>
+					<Add directory="/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"/>
+					<Add directory="/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/libs/dummy_lib"/>
 					<Add directory="/usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/include/c++/8.3.1"/>
 					<Add directory="/usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/include/c++/8.3.1/arm-none-eabi"/>
 					<Add directory="/usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/include/c++/8.3.1/backward"/>
@@ -156,7 +169,12 @@
 					<Add option="-DPICO_CMAKE_BUILD_TYPE=&quot;Debug&quot;"/>
 					<Add option="-DPICO_CXX_ENABLE_EXCEPTIONS=0"/>
 					<Add option="-DLIB_PICO_STDIO=1"/>
-					<Add option="-DLIB_PICO_STDIO_UART=1"/>
+					<Add option="-DLIB_PICO_STDIO_USB=1"/>
+					<Add option="-DLIB_PICO_UNIQUE_ID=1"/>
+					<Add option="-DPICO_RP2040_USB_DEVICE_UFRAME_FIX=1"/>
+					<Add option="-DCFG_TUSB_MCU=OPT_MCU_RP2040"/>
+					<Add option="-DCFG_TUSB_OS=OPT_OS_PICO"/>
+					<Add option="-DLIB_PICO_FIX_RP2040_USB_DEVICE_ENUMERATION=1"/>
 					<Add directory="/home/prrtchr/pico/pico-sdk/src/common/pico_stdlib/include"/>
 					<Add directory="/home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_gpio/include"/>
 					<Add directory="/home/prrtchr/pico/pico-sdk/src/common/pico_base/include"/>
@@ -191,10 +209,18 @@
 					<Add directory="/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_bootrom/include"/>
 					<Add directory="/home/prrtchr/pico/pico-sdk/src/common/pico_binary_info/include"/>
 					<Add directory="/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio/include"/>
-					<Add directory="/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include"/>
+					<Add directory="/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include"/>
+					<Add directory="/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_unique_id/include"/>
+					<Add directory="/home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_flash/include"/>
+					<Add directory="/home/prrtchr/pico/pico-sdk/src/common/pico_usb_reset_interface/include"/>
 					<Add directory="/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_int64_ops/include"/>
 					<Add directory="/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_mem_ops/include"/>
 					<Add directory="/home/prrtchr/pico/pico-sdk/src/rp2_common/boot_stage2/include"/>
+					<Add directory="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src"/>
+					<Add directory="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/common"/>
+					<Add directory="/home/prrtchr/pico/pico-sdk/lib/tinyusb/hw"/>
+					<Add directory="/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"/>
+					<Add directory="/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/libs/dummy_lib"/>
 					<Add directory="/usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/include/c++/8.3.1"/>
 					<Add directory="/usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/include/c++/8.3.1/arm-none-eabi"/>
 					<Add directory="/usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/include/c++/8.3.1/backward"/>
@@ -455,6 +481,50 @@
 					<DistClean command="/usr/bin/gmake -j12 -f &quot;/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="dummy_lib">
+				<Option output="/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/libs/dummy_lib/libdummy_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/libs/dummy_lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/libs/dummy_lib"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/include/c++/8.3.1"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/include/c++/8.3.1/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/include/c++/8.3.1/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/8.3.1/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/8.3.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/libs/dummy_lib/Makefile&quot;  VERBOSE=1 dummy_lib"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/libs/dummy_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/libs/dummy_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/libs/dummy_lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dummy_lib/fast">
+				<Option output="/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/libs/dummy_lib/libdummy_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/libs/dummy_lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/libs/dummy_lib"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/include/c++/8.3.1"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/include/c++/8.3.1/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/include/c++/8.3.1/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/8.3.1/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/8.3.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/libs/dummy_lib/Makefile&quot;  VERBOSE=1 dummy_lib/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/libs/dummy_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/libs/dummy_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/libs/dummy_lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="bs2_default">
 				<Option output="/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/pico-sdk/src/rp2_common/boot_stage2"/>
@@ -568,100 +638,138 @@
 		<Unit filename="/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/test/test.c">
 			<Option target="test"/>
 		</Unit>
+		<Unit filename="/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/libs/dummy_lib/dummy_lib.c">
+			<Option target="dummy_lib"/>
+		</Unit>
+		<Unit filename="/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/libs/dummy_lib/dummy_lib.h">
+			<Option target="dummy_lib"/>
+		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.h">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.h">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.h">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.h">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.h">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.h">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.h">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.h">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.h">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.h">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd.c">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd.h">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.h">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/tusb.c">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/tusb.h">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/src/common/pico_sync/critical_section.c">
@@ -716,6 +824,7 @@
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c">
@@ -787,6 +896,7 @@
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S">
@@ -845,16 +955,16 @@
 			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
-		<Unit filename="/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c">
-			<Option target="test"/>
-		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c">
@@ -862,6 +972,7 @@
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c">
+			<Option target="test"/>
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/CMakeLists.txt">
@@ -1181,6 +1292,9 @@
 		</Unit>
 		<Unit filename="/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/elf2uf2/tmp/ELF2UF2Build-mkdirs.cmake">
 			<Option virtualFolder="CMake Files\cmake-build-debug\elf2uf2\tmp\"/>
+		</Unit>
+		<Unit filename="/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/libs/dummy_lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\dummy_lib\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
