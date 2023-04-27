@@ -33,7 +33,6 @@ rm *.uf2 2> /dev/null
 rm *.bin 2> /dev/null
 rm *.dis 2> /dev/null
 rm *.elf 2> /dev/null
-rm *.hex 2> /dev/null
 rm *.elf.map 2> /dev/null
 
 #Check if the user inserted a file to execute
@@ -62,7 +61,8 @@ if [ -d "/media/$(whoami)/RPI-RP2" ]; then
     elif [ "$debugtype" = "1" ] || [ "$debugtype" = "USB" ] || [ "$debugtype" = "usb" ]; then
         echo "---->Debugging enabled. Attempting to connect to RPIPico"
         #Connect to the RPIPico using minicom sudo needed! (Or add user to the dialout group)
-        sudo minicom -b 115200 -o -D /dev/ttyACM0
+        sudo -S minicom -b 115200 -o -D /dev/ttyACM0
+        echo ' if minicom didnt work, try "sudo minicom -b 115200 -o -D /dev/ttyACM0" after this script finishes'
     elif [ "$debugtype" = "2" ]  || [ "$debugtype" = "JS" ] || [ "$debugtype" = "js" ]; then
         echo "---->Debugging enabled. Attempting to debug via javascript debugger"
         #Copy the .hex file to the rp2040js folder

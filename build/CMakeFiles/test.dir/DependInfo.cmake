@@ -113,7 +113,6 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/common"
   "/home/prrtchr/pico/pico-sdk/lib/tinyusb/hw"
   "/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
-  "../libs/dummy_lib"
   )
 set(CMAKE_DEPENDS_CHECK_C
   "/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c" "/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
@@ -269,7 +268,6 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/common"
   "/home/prrtchr/pico/pico-sdk/lib/tinyusb/hw"
   "/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
-  "../libs/dummy_lib"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
@@ -369,12 +367,10 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/common"
   "/home/prrtchr/pico/pico-sdk/lib/tinyusb/hw"
   "/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
-  "../libs/dummy_lib"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/libs/dummy_lib/CMakeFiles/dummy_lib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

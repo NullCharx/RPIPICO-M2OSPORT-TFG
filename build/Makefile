@@ -169,19 +169,6 @@ test/fast:
 .PHONY : test/fast
 
 #=============================================================================
-# Target rules for targets named dummy_lib
-
-# Build rule for target.
-dummy_lib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dummy_lib
-.PHONY : dummy_lib
-
-# fast build rule for target.
-dummy_lib/fast:
-	$(MAKE) $(MAKESILENT) -f libs/dummy_lib/CMakeFiles/dummy_lib.dir/build.make libs/dummy_lib/CMakeFiles/dummy_lib.dir/build
-.PHONY : dummy_lib/fast
-
-#=============================================================================
 # Target rules for targets named bs2_default_padded_checksummed_asm
 
 # Build rule for target.
@@ -2134,7 +2121,6 @@ help:
 	@echo "... bs2_default_padded_checksummed_asm"
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
 	@echo "... bs2_default"
-	@echo "... dummy_lib"
 	@echo "... helloworld"
 	@echo "... test"
 	@echo "... helloworld/helloworld.obj"

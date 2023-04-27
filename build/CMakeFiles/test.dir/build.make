@@ -1030,7 +1030,6 @@ test.elf: CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/tusb.c.
 test.elf: CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 test.elf: CMakeFiles/test.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 test.elf: CMakeFiles/test.dir/build.make
-test.elf: libs/dummy_lib/libdummy_lib.a
 test.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 test.elf: CMakeFiles/test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Linking CXX executable test.elf"

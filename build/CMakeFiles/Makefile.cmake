@@ -14,7 +14,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.18.4/CMakeSystem.cmake"
   "elf2uf2/tmp/ELF2UF2Build-cfgcmd.txt.in"
   "pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/tmp/PioasmBuild-cfgcmd.txt.in"
-  "../libs/dummy_lib/CMakeLists.txt"
   "../pico_sdk_import.cmake"
   "/home/prrtchr/pico/pico-sdk/CMakeLists.txt"
   "/home/prrtchr/pico/pico-sdk/cmake/Platform/PICO.cmake"
@@ -152,7 +151,6 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "elf2uf2/tmp/ELF2UF2Build-cfgcmd.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "libs/dummy_lib/CMakeFiles/CMakeDirectoryInformation.cmake"
   "generated/pico_base/pico/version.h"
   "generated/pico_base/pico/config_autogen.h"
   "pico-sdk/CMakeFiles/CMakeDirectoryInformation.cmake"
@@ -243,7 +241,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/helloworld.dir/DependInfo.cmake"
   "CMakeFiles/ELF2UF2Build.dir/DependInfo.cmake"
   "CMakeFiles/test.dir/DependInfo.cmake"
-  "libs/dummy_lib/CMakeFiles/dummy_lib.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/DependInfo.cmake"
