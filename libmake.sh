@@ -6,8 +6,9 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-# Create the "objects" folder if it doesn't exist
+# Create the "objects" folder if it doesn't exist. Delete its contents.
 mkdir -p objects
+rm -rf objects/*
 
 # Find .obj and .o files inside the specified folder path and copy them to the "objects" folder
 if ! find ./build/CMakeFiles/"$1".dir/ -type f \( -name "*.obj" -o -name "*.o" \) -exec cp {} objects/ \; ; then
@@ -32,8 +33,8 @@ elif ls *.o >/dev/null 2>&1; then
     exit 1
   fi
 else
-  # Only .obj files exist, create library with .obj files
-  if ! ar rcs libname.a *.obj ; then
+  # Only .obj files exist, create library with .obj files in the root folder of the escript
+  if ! ar rcs ../libname.a *.obj ; then
     echo "Error: Failed to create the library file."
     exit 1
   fi
