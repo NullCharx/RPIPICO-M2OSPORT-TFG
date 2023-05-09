@@ -115,7 +115,6 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/prrtchr/pico/pico-sdk/lib/tinyusb/src/common"
   "/home/prrtchr/pico/pico-sdk/lib/tinyusb/hw"
   "/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
-  "/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/libs/dummy_lib"
   )
 
 # The set of dependency files which are needed:
@@ -182,7 +181,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/libs/dummy_lib/CMakeFiles/dummy_lib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

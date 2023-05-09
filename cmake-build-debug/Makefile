@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/cmake
+CMAKE_COMMAND = /jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake
 
 # The command to remove a file.
-RM = /jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/cmake -E rm -f
+RM = /jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/jetbrains-toolbox-1.22.10970/Installs/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -154,19 +154,6 @@ helloworld: cmake_check_build_system
 helloworld/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/build
 .PHONY : helloworld/fast
-
-#=============================================================================
-# Target rules for targets named dummy_lib
-
-# Build rule for target.
-dummy_lib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dummy_lib
-.PHONY : dummy_lib
-
-# fast build rule for target.
-dummy_lib/fast:
-	$(MAKE) $(MAKESILENT) -f libs/dummy_lib/CMakeFiles/dummy_lib.dir/build.make libs/dummy_lib/CMakeFiles/dummy_lib.dir/build
-.PHONY : dummy_lib/fast
 
 #=============================================================================
 # Target rules for targets named bs2_default
@@ -1933,7 +1920,6 @@ help:
 	@echo "... bs2_default_padded_checksummed_asm"
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
 	@echo "... bs2_default"
-	@echo "... dummy_lib"
 	@echo "... helloworld"
 	@echo "... test"
 	@echo "... build/helloworld/helloworld.obj"

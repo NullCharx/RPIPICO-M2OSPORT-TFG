@@ -39,7 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/libs/dummy_lib/cmake_install.cmake")
   include("/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/pico-sdk/cmake_install.cmake")
 
 endif()
