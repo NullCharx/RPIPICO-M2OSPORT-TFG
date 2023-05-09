@@ -11,7 +11,7 @@ fi
 mkdir -p objects
 rm -rf objects/*
 
-# Find .obj and .o files inside the specified folder path and copy them to the "objects" folder. #If the parent
+# Find .obj and .o files inside the specified folder path and copy them to the "objects" folder
 if ! find ./build/CMakeFiles/"$1".dir/ -type f \( -name "*.obj" -o -name "*.o" \) -exec cp {} objects/ \; ; then
     echo "Error: No object files found or unable to copy files to the 'objects' folder."
     exit 1
@@ -21,17 +21,24 @@ fi
 cd objects || exit 1
 
 # Create the "include" folder if it doesn't exist
-mkdir -p include
+mkdir -p include/pico
+mkdir -p include/hardware
 
-# Find header files for each .obj file and copy them to the "include" folder
+# Find header files for each .obj file and copy them to the appropriate "include" subfolder
 for obj_file in *.obj; do
     # Get the base name of the object file
     base_name="${obj_file%.*.obj}"
-    #echo $base_name
-    # Find the corresponding header file and copy it to the "include" folder
-    find $PICO_SDK_PATH -type f -name "$base_name.h" -exec cp {} include/ \;
+    # Find the corresponding header file and copy it to the appropriate "include" subfolder
+    parent_folder=$(basename "$(dirname "$(find "$PICO_SDK_PATH" -type f -name "$base_name.h")")")
+    echo $parent_folder
+    if [[ $parent_folder == pico* ]]; then
+        cp "$(find "$PICO_SDK_PATH" -type f -name "$base_name.h")" "include/pico/"
+    elif [[ $parent_folder == hardware ]]; then
+        cp "$(find "$PICO_SDK_PATH" -type f -name "$base_name.h")" "include/hardware/"
+    else
+        cp "$(find "$PICO_SDK_PATH" -type f -name "$base_name.h")" "include/"
+    fi
 done
-
 # Move other header files to the "include" folder
 #pico.h
 find $PICO_SDK_PATH -type f -name "pico.h" -exec cp {} include/ \;
@@ -46,11 +53,19 @@ find $PICO_SDK_PATH -type f -name "config.h" -exec cp {} include/mbedtls \;
 find $PICO_SDK_PATH -type f -name "config.h" -exec cp {} include/pico \;
 
 find $PICO_SDK_PATH -type f -name "check_config.h" -exec cp {} include/mbedtls \;
-mv include/platform.h include/pico/platform.h
 find $PICO_SDK_PATH -type f -name "platform_time.h" -exec cp {} include/mbedtls \;
 
+find $PICO_SDK_PATH -type f -name "platform.h" -exec cp {} include/pico \;
+
 find $PICO_SDK_PATH -type f -name "error.h" -exec cp {} include/pico \;
-mv include/time.h include/pico/time.h
+find $PICO_SDK_PATH -type f -name "error.h" -exec cp {} include/hardware \;
+
+find $PICO_SDK_PATH -type f -name "stdio.h" -exec cp {} include/pico \;
+find $PICO_SDK_PATH -type f -name "time.h" -exec cp {} include/pico \;
+find $PICO_SDK_PATH -type f -name "gpio.h" -exec cp {} include/hardware \;
+find $PICO_SDK_PATH -type f -name "parts.h" -exec cp {} include/ \;
+find $PICO_SDK_PATH -type f -name "uart.h" -exec cp {} include/hardware \;
+
 
 # Check if there are .o and .obj files
 if ls *.o >/dev/null 2>&1 && ls *.obj >/dev/null 2>&1; then
