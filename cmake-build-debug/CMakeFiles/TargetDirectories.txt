@@ -1,6 +1,5 @@
-/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/CMakeFiles/test.dir
-/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/CMakeFiles/ELF2UF2Build.dir
 /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/CMakeFiles/helloworld.dir
+/home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/CMakeFiles/ELF2UF2Build.dir
 /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/prrtchr/pico/RPIPICO-M2OSPORT-TFG/cmake-build-debug/pico-sdk/CMakeFiles/edit_cache.dir

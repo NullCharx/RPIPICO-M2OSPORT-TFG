@@ -223,7 +223,6 @@ CMakeFiles/helloworld.dir/helloworld/helloworld.c.obj
  /home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h
  /home/prrtchr/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
  /home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h
- /home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h
  /home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h
  generated/pico_base/pico/config_autogen.h
  generated/pico_base/pico/version.h
@@ -1902,23 +1901,18 @@ CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio/s
  /home/prrtchr/pico/pico-sdk/src/common/pico_time/include/pico/time.h
  /home/prrtchr/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h
  /home/prrtchr/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
- /home/prrtchr/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h
  /home/prrtchr/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
  /home/prrtchr/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
- /home/prrtchr/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h
  /home/prrtchr/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h
- /home/prrtchr/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h
  /home/prrtchr/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
  /home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h
  /home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h
  /home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h
- /home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h
  /home/prrtchr/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
  /home/prrtchr/pico/pico-sdk/src/rp2_common/pico_printf/include/pico/printf.h
  /home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h
  /home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio/driver.h
  /home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
- /home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h
  /home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h
  generated/pico_base/pico/config_autogen.h
  generated/pico_base/pico/version.h
@@ -2200,7 +2194,6 @@ CMakeFiles/helloworld.dir/home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdlib/
  /home/prrtchr/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h
  /home/prrtchr/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
  /home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h
- /home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h
  /home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h
  /home/prrtchr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
  generated/pico_base/pico/config_autogen.h

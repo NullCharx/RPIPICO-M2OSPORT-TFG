@@ -16,7 +16,7 @@ cd build
 #Export path to pico-sdk (absolute path)
 #Preconfigure cmake and make
 cmake ..
-make -j6 --trace
+make -j6 -n
 
 echo "---->Project built"
 
